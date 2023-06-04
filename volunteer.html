@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--  -->
+        <meta charset = "utf-8">
+        <!-- title -->
+        <title>The National Aafforestation Innitiative</title>
+        <link rel= "stylesheet" href ="navigationTabs.css">
+        <link rel="stylesheet" href="content.css">
+        <link rel="stylesheet" href="formstyle.css">
+        <script src="validation.js"></script>
+        
+    </head>
+    <body>
+        
+
+        <header>
+            <!--image element: specify location (scr), specify text when image dosn't load (alt)-->
+            <img src="tree.jpg" alt="tree" width="100%" height="300px" />
+            <h1>The National Aafforestation Innitiative</h1>
+        </header>
+
+    <!-- insert the manin menu inside the nav tage   -->
+        <nav>
+            <!--creat unordered list has the elements of the main menu as hyperlinks  -->
+            <ul>
+                <li class="tabs"><a href="home.html">Home</a></li>
+                <li class="tabs"><a href="about.html">About us</a></li>
+                <li class="tabs"><a href="plants.html">Our Plants</a></li>
+                <li class="tabs"><a href="volunteer.html">Voulnteer With US </a></li>
+                <li class="tabs"><a href="contact.html">Contact us </a></li>
+        </nav>
+        <br><br>
+        
+        <div class="background">
+            <div class="column">
+                <div class="parts">
+                    
+                    <title>Form</title>
+
+                        <h2>Volunteering Form</h2>
+
+            
+                    
+            <form name= "volunteerForm" action="insert.php" method="post" >
+                <fieldset style="padding: 20px;">
+                    <legend style="font-weight: 900; text-align: center;">Fill the following form to volunteer with us</legend>
+                    <!-- personal info -->
+                    <label class="textinput">Full Name:</label>
+                        <input type="text" name="fullname" placeholder="first name + last name" class="textinput" required>
+                
+                    <label class="textinput">E-mail Address:</label>
+                        <input type="text" name="emailaddress" placeholder="name@domain.com" class="textinput"required >
+                
+                    <label class="textinput">Contact No:</label>
+                        <input type="text" name="phonenumber" placeholder="xx-xxxx-xxxx" class="textinput" required>
+              
+                    <input type="submit" name="submit" value="Submit" onclick="return validateOnSubmit()">
+                    <input type="reset" value="Clear">
+                </fieldset>
+            </form>
+
+            <form action="select.php" method="post">
+                <fieldset style="padding: 20px;">
+                    <legend style="font-weight: 900; text-align: center;">View our volunteers list</legend>
+                    <button style="margin: auto; display: flex; background-color: white; padding: 15px 32px; text-align: center; font-size: 16px;">View</button>
+                </fieldset>
+            </form>
+
+            <form action="update.php" method="post">
+                <fieldset style="padding: 20px;">
+                    <legend style="font-weight: 900; text-align: center;">Update your information</legend>
+                    <label class="textinput">Enter your email address:</label>
+                    <input type="text" name="emailaddress" placeholder="name@domain.com" class="textinput" required>
+                    <label class="textinput"> Update your contact No:</label>
+                    <input type="text" name="phonenumber" placeholder="xx-xxxx-xxxx" class="textinput" required>
+                    <label class="textinput">Update your Name:</label>
+                    <input type="text" name="fullname" placeholder="first name + last name" class="textinput" required>
+
+                    <input type="submit" name="update" value="Update">
+                    </fieldset>
+            </form>
+
+            <form action="delete.php" method="post">
+                <fieldset style="padding: 20px;">
+                    <legend style="font-weight: 900; text-align: center;">Delete your information</legend>
+                    <label class="textinput">Enter your email address:</label>
+                    <input type="text" name="emailaddress" placeholder="name@domain.com" class="textinput" required>
+                    <input type="submit" name="delete" value="delete">
+                </fieldset>
+            </form>
+
+            </div></div></div>
+
+            <div class="footer">
+                <h2>Turning Deserts Into Forests Together</h2>
+            </div>
+    </body>
+</html>

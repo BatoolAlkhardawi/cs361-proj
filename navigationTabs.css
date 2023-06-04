@@ -1,0 +1,74 @@
+/* get rid of the margin in the main menu list*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #d6e0d4;
+}
+
+h1 {
+	color: #1f5239;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+/* style the nav tag: width, height and background color */
+nav {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+/* style inside the web navigation*/
+/* shift the menu bar to the right*/
+ul {
+	width: auto;
+	margin-left: 7px;
+	height: auto;
+}
+
+/* style the individual links in the list*/
+/* choosing none to list style will delete the bullet points in the list */
+ul li.tabs {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	list-style: none;
+	border: none;
+	margin: auto;
+	overflow: hidden;
+	background-color: #94bca8;
+
+	
+}
+
+/* style the individual tabs*/
+ul li a {
+
+	/* style the main menu font: size, family, and color  */
+	font-size: 10 px;
+	font-family: arial;
+	color: #265b41;
+
+	/* styling the tab buttons */
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	padding: 8px 85px;
+	transition: 0.1s;
+}
+
+/* when you hover over the list iteam,  it will change the tab's and text's color */
+ul li a:hover {
+	color:#cae9d9;
+	background-color:#478666; 
+}
+
+.content {
+	max-width: 500px;
+	margin: auto;
+}
+

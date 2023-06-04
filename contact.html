@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>The National Aafforestation Innitiative</title>
+        <link rel="stylesheet" href="navigationTabs.css">
+        <link rel="stylesheet" href="content.css">
+        <link rel="stylesheet" href="formstyle.css">
+        <script src="validation.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="tree.jpg" alt="tree" width="100%" height="300px" />
+            <h1>The National Aafforestation Innitiative</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="tabs"><a href="home.html">Home</a></li>
+                <li class="tabs"><a href="about.html">About us</a></li>
+                <li class="tabs"><a href="plants.html">Our Plants</a></li>
+                <li class="tabs"><a href="volunteer.html">Voulnteer With US </a></li>
+                <li class="tabs"><a href="contact.html">Contact us </a></li>
+        </nav>
+
+        <div class="background">
+            <div class="column">
+                <div class="parts">
+                
+                <form method="post" action="">
+                    <label> Full Name:</label>
+                        <input type="text" name="fullname" placeholder="first name + last name"  class="textinput" required>
+
+
+                    <label>E-mail Address:</label>
+                        <input type="email" name="emailaddress" placeholder="name@domin.com" class="textinput" required >
+
+
+                    <label for=reason>Contact Reason:</label>
+
+                        <select name="reason" id="reason">
+                            <option value="Complain">Complaint</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Other">other</option>
+                        </select>
+                        <br><br> <hr> <br>
+                    
+                    <label>Message:</label><br>
+                        <textarea id="message" rows="10" cols="60" placeholder="Enter your message here." required></textarea><br>
+
+                    <hr>
+                        <input type="submit" name="submit" value="Submit" onclick="return validateOnSubmit()">
+                        <input type="reset" value="Clear">
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Turning Deserts Into Forests Together</h2>
+        </div>
+            
+
+        </body>
+</html>

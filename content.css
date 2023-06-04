@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    padding: 30px;
+    background: #94bca8;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column {
+    float: left;
+    margin-left: 10px;;
+    width: 98%;
+}
+
+/* Add a card effect for articles */
+.parts {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#e6efe5;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titletext {
+    color: #123926;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenttext{
+    color: #1f5239;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+/* Clear floats after the columns */
+.background:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #d6e0d4;
+    color:#123926;
+    margin-top: 20px;
+}
